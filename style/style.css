@@ -72,3 +72,10 @@
     float: right;
 
 }
+
+/* writeups.html */
+.writeups-grid-content {
+    display: grid;
+    grid-template-rows: 80%;
+    grid-template-columns: 100%;
+}
