@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;800&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-color:#cfccc6;
+}
+.navbar {
+    display: flex; /* enables dynamic width and height and sets all elements within the div as inline */
+    background-color: #cfccc6;
+    align-items: left;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.navbar a {
+    color: #5F786A;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.list-item {
+    color: #c3b7c4;
+    display: inline-block;
+}
+
+.nav-list .list-item {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.primary-icon {
+    display: inline-block;
+}
+
+.grid-content-preview {
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-columns: 60% 40%;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-content: space-around;
+
+
+}
+
+.left-content-preview {
+    width: 85%;
+    font-size: 22px;
+    /* max-width:; */
+    color: #5F786A;
+}
+
+.right-content-preview {
+    /* max-width: 100%; */
+    align-items: right;
+}
+
+.right-content-preview-media {
+    display: block;
+    max-width: 100%;
+    float: right;
+
+}
