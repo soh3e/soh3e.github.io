@@ -1,0 +1,30 @@
+# Shoppy Writeup
+ `nmap -p- 10.10.11.180`:
+```
+PORT     STATE SERVICE                                                                                                                                                                                            
+22/tcp   open  ssh                                                                                                                                                                                             
+80/tcp   open  http                                                                                                                                                                                               
+9093/tcp open  copycat 
+```
+
+Ok, we have ssh, http, and something called copycat? I've never seen this before...
+Apparently it's a false positive: https://vato.cc/hackthebox-writeup-shoppy/
+
+Although I did some directory bruteforcing with `gobuster`, it turns out I can also look for subdomains with `gobuster` as well! This is called **Vhost Discovery**.
+
+`gobuster vhost -w ~/wordlists/vhosts/bitquark-subdomains-top100000.txt -u shoppy.htb`
+
+Like I said before, I did some directory bruteforcing and found `/login` and `/admin` which are both obviously pretty interesting. Both get me to the same page of `http://shoppy.htb/login`.
+
+We get to a login page like so: https://imgur.com/a/x5EPyyw
+
+Turns out the database running is MongoDB NoSQL 
+*Basically always look for potential injections?!*
+Like SQL injection as we just experienced here :) the things that will always return True...
+In this case, `admin'||'1==1` always returns true for NoSQL.
+
+Yay, we're in!
+
+
+
+

@@ -77,5 +77,39 @@
 .writeups-grid-content {
     display: grid;
     grid-template-rows: 80%;
-    grid-template-columns: 100%;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    align-content: start;
+    margin: auto;
+    width: 80%;
+}
+
+.writeups-grid-content a {
+    text-decoration: none;
+    color:#5F786A;
+}
+
+.writeups-grid-content a:hover {
+    text-decoration: underline;
+    color:#5F786A;
+}
+
+.writeup-item {
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 5%;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+.writeup-item-title {
+    font-size: 18px;
+}
+
+.writeup-item-subtext {
+    margin-top: 20px;
+    font-size: 15px;
+    height: 90%;
+
 }

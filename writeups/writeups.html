@@ -10,7 +10,65 @@
     <script type="module" src="https://md-block.verou.me/md-block.js"></script> <!-- md to html converter -->
     </head>
     <body>
+        <!-- navbar -->
+        <nav class="navbar">
+            <div style="justify-content: left;">
+            <a class="primary-icon" href="/index.html">soh3e</a>
+            <!-- <p class="primary-icon">soh3e</p> -->
+            </div>
+        <ul class="nav-list" id="navi-list">
+            <li class="list-item">
+                <a href="/writeups/writeups.html">writeups</a>
+            </li>
+            <li class="list-item">
+                <a href="/projects/projects.html">projects</a>
+            </li>
+            <li class="list-item">
+                <a href="other.html">other</a>
+            </li>
+            <li class="list-item">
+                <a href="aboutme.html">about me</a>
+            </li>
+        </ul>
+        </nav>
+        <!-- dynamic navbar for smaller screens -->
+        <div class="menu" id="menuButton"> <!-- id is necessary for js to recognize-->
+            <!-- there has to be a better way to do this lmFAO -->
+            <div class="menu-line"></div> 
+            <div class="menu-line"></div> 
+            <div class="menu-line"></div> 
+        </div>
+
+        <div class="section-div">
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
         <div class="writeups-grid-content">
-            
+            <div class="writeup-item">
+                <a class="writeup-item-title" href="/writeups/stocker.md">Stocker</a>
+                <p class="writeup-item-subtext">
+                    Stocker was really enjoyable; not only was it well-made, but I did it with my mentor and friend, @bri5ee. A bit of enumeration with gobuster revealed a "hidden" vHost. From here I was at a login page that required some critical thinking. We exploited it by changing the data type it was accepting through Burpsuite and a string that enabled noSQL authentication bypass. After authentication was granted, we were led to a shopping page with options to "buy" products. <a href="/writeups/stocker.md ">(Read More)</a>
+                    <!-- But more importantly, we were able to create PDFs that seemed to be created with basic HTML,  -->
+                </p>
+                <div class="writeup-item-image">
+
+                </div>
+            </div>
+            <div class="writeup-item">
+                <a class="writeup-item-title" href="/writeups/shoppy.md">Shoppy</a>
+                <p class="writeup-item-subtext">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsam architecto totam voluptatibus beatae sequi deleniti reiciendis qui pariatur vitae!
+                </p>
+            </div>
+    
+
+                <!-- template for new writeups -->
+                <!-- <li class="writeup-item">
+                    <a></a>
+                </li> -->
+
+            </ul>
         </div>
     </body>
