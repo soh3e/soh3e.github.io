@@ -1,0 +1,6 @@
+# markdown configuration
+name: Sohee
+description: none
+url: "http://soh3e.github.io"
+markdown: kramdown
+highlighter: rouge
