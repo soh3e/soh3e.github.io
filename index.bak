@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>soh3e</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style/style.css">
+        <!-- Noto Sans font ? idk which font i want, for now Noto Sans-->
+        <script src="script.js"></script>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script> <!-- md to html converter -->
+    </head>
+    
+    <body>
+        <!-- navbar -->
+        <nav class="navbar">
+            <div style="justify-content: left;">
+            <a class="primary-icon" href="#">soh3e</a>
+            <!-- <p class="primary-icon">soh3e</p> -->
+            </div>
+        <ul class="nav-list" id="navi-list">
+            <li class="list-item">
+                <a href="/writeups/writeups.html">writeups</a>
+            </li>
+            <li class="list-item">
+                <a href="/projects/projects.html">projects</a>
+            </li>
+            <li class="list-item">
+                <a href="/other.html">other</a>
+            </li>
+            <li class="list-item">
+                <a href="aboutme.html">about me</a>
+            </li>
+        </ul>
+        </nav>
+        <!-- dynamic navbar for smaller screens -->
+        <div class="menu" id="menuButton"> <!-- id is necessary for js to recognize-->
+            <!-- there has to be a better way to do this lmFAO -->
+            <div class="menu-line"></div> 
+            <div class="menu-line"></div> 
+            <div class="menu-line"></div> 
+        </div>
+
+        <div class="section-div">
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="grid-content-preview">
+            <div class="left-content-preview">
+                <h1>Title Preview</h1>
+                <p></p>
+            </div>
+            <div class="right-content-preview">
+                <img class="right-content-preview-media" src="/media/Screenshot 2023-02-15 at 5.19.51 PM.png">
+                <!-- usually an image, probably, or some form of media -->
+
+            </div>
+            <!-- what the viewer will first see, fills up the majority of the top screen, 1x2 layout where the left is the text content and the right is some media -->
+        </div>
+
+        <div class="grid-content">
+            <!-- this will be a 4x4(?) grid layout with different blog posts. maybe the grid layout can be unaligned in a way where... hm... it has a trickling down effect? or maybe iono, just something cool -->
+        </div>
+    </body>
+</html>
